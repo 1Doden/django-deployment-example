@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div class="jumbotron container">
+      <h1>Please Login</h1>
+      <form class="" action="{% url "basic_app:user_login" %}" method="post">
+
+
+        <label class="col-sm-2 control-label" for="username">Username</label>
+        <input class="form-group form-control" type="text" name="username" placeholder="Username">
+
+        <label class="col-sm-2 control-label" for="password">Password</label>
+        <input class="form-group form-control " type="password" name="password">
+
+        <input class="btn btn-info btn-lg " type="submit" name="" value="Login">
+
+      </form>
+    </div>
+  </body>
+</html>
